@@ -221,3 +221,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Parcel watch runtime files (keep them outside the repository)
+private/
+state/
+reports/
+*.local.json
+*.eml

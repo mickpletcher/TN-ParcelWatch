@@ -1,0 +1,9 @@
+[project]
+name = "stewart-property-watch"
+version = "1.0.0"
+description = "Deterministic read-only property watch with a compact supervisor contract"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 120

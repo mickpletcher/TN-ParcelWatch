@@ -1,0 +1,9 @@
+# Supervisor status contract v1
+
+`watch.py` exits 0 for a complete report (ALL_CLEAR or ALERT), 1 for any lookup, config, output, state or delivery failure (including partial reports). A crash/missing summary is failure. Alerts are findings, not process failures. `run_supervised.py` returns 0 only for SUCCESS or SUCCESS_WITH_FINDINGS, 1 otherwise.
+
+The wrapper reads only the compact summary from a new per-run directory, never report bodies, site content or logs. Its one-line JSON contains v, run_id, verdict, process_exit, report_complete, lookups_attempted, owners, taxes, delivery, new_repairs and resend=false. The owners and taxes objects each carry separate expected/verified counts plus changed/nonzero finding counts. The underlying compact summary also carries MATCH, OWNER_CHANGE, ZERO, BALANCE_NONZERO and UNVERIFIABLE counts. A fresh UUID run_id must match the invocation. Twelve classified checks are required (six ownership and six taxes); classified is distinct from attempted. Missing configuration and circuit-skipped records are classified but not attempted. Lookups_attempted counts logical record lookups, not retry HTTP requests.
+
+SUCCESS and SUCCESS_WITH_FINDINGS require process exit 0, complete report, all 12 classified checks, no unknowns and internally consistent counts/status. PARTIAL requires exit 1, a complete partial report and one or more UNVERIFIABLE checks. Unknown or missing delivery is not success. With --send, smtp_accepted is required; it does not prove inbox delivery. With no --send, not_requested is the expected dry-run state. A failure, timeout or exception produces FAILED. No status permits an automatic resend.
+
+Do not reuse an old status file. A persistent state directory preserves the weekly send ledger and repair deduplication. Each report directory is new. The wrapper's deadline may kill a run during transport, so absence of acceptance is uncertain, not evidence the mail was unsent.

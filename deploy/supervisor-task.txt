@@ -1,0 +1,4 @@
+Run only:
+python3 /opt/stewart-property-watch/run_supervised.py --config /private/stewart/config.local.json --output /private/stewart/reports --state /private/stewart/state
+
+Inspect its exit code and single v1 status line. On exit 0 with SUCCESS or SUCCESS_WITH_FINDINGS, stop; read nothing else and call no agent. Otherwise inspect only sanitized repair events. Prepare a repair PR only for verified code/schema failures through the authorized repair destination. Report access/configuration blockers. Missing status or uncertain delivery is failure; never resend automatically. Never change the baseline, schedule, access controls or deployment.

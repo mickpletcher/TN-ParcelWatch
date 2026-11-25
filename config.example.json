@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "delivery_approved": false,
+  "owners": [
+    {
+      "id": "owner_1",
+      "county": "Stewart",
+      "parcel": "081999X Z 00100",
+      "expected": "SYNTHETIC OWNER"
+    },
+    {
+      "id": "owner_2",
+      "county": "Stewart",
+      "parcel": "081999X Z 00200",
+      "expected": "SYNTHETIC OWNER"
+    },
+    {
+      "id": "owner_3",
+      "county": "Stewart",
+      "parcel": "081999X Z 00300",
+      "expected": "SYNTHETIC OWNER"
+    },
+    {
+      "id": "owner_4",
+      "county": "Stewart",
+      "parcel": "081999X Z 00400",
+      "expected": "SYNTHETIC OWNER"
+    },
+    {
+      "id": "owner_5",
+      "county": "Stewart",
+      "parcel": "081999X Z 00500",
+      "expected": "SYNTHETIC OWNER"
+    },
+    {
+      "id": "owner_6",
+      "county": "Stewart",
+      "parcel": "081999X Z 00600",
+      "expected": "SYNTHETIC OWNER"
+    }
+  ],
+  "taxes": [
+    {
+      "id": "tax_1",
+      "county": "Stewart",
+      "configured": true,
+      "baseline": "0.00",
+      "complete_history_verified": true,
+      "parcel": "TEST-1",
+      "url": "https://tennesseetrustee.org/REPLACE-WITH-VERIFIED-DETAIL-URL",
+      "headers": [
+        "Parcel",
+        "Year",
+        "Balance"
+      ],
+      "columns": {
+        "parcel": "Parcel",
+        "year": "Year",
+        "balance": "Balance"
+      },
+      "required_year": 2026
+    },
+    {
+      "id": "tax_2",
+      "county": "Stewart",
+      "configured": true,
+      "baseline": "0.00",
+      "complete_history_verified": true,
+      "parcel": "TEST-2",
+      "url": "https://tennesseetrustee.org/REPLACE-WITH-VERIFIED-DETAIL-URL",
+      "headers": [
+        "Parcel",
+        "Year",
+        "Balance"
+      ],
+      "columns": {
+        "parcel": "Parcel",
+        "year": "Year",
+        "balance": "Balance"
+      },
+      "required_year": 2026
+    },
+    {
+      "id": "tax_3",
+      "county": "Stewart",
+      "configured": true,
+      "baseline": "0.00",
+      "complete_history_verified": true,
+      "parcel": "TEST-3",
+      "url": "https://tennesseetrustee.org/REPLACE-WITH-VERIFIED-DETAIL-URL",
+      "headers": [
+        "Parcel",
+        "Year",
+        "Balance"
+      ],
+      "columns": {
+        "parcel": "Parcel",
+        "year": "Year",
+        "balance": "Balance"
+      },
+      "required_year": 2026
+    },
+    {
+      "id": "tax_4",
+      "county": "Stewart",
+      "configured": true,
+      "baseline": "0.00",
+      "complete_history_verified": true,
+      "parcel": "TEST-4",
+      "url": "https://tennesseetrustee.org/REPLACE-WITH-VERIFIED-DETAIL-URL",
+      "headers": [
+        "Parcel",
+        "Year",
+        "Balance"
+      ],
+      "columns": {
+        "parcel": "Parcel",
+        "year": "Year",
+        "balance": "Balance"
+      },
+      "required_year": 2026
+    },
+    {
+      "id": "tax_5",
+      "county": "Stewart",
+      "configured": true,
+      "baseline": "0.00",
+      "complete_history_verified": true,
+      "parcel": "TEST-5",
+      "url": "https://tennesseetrustee.org/REPLACE-WITH-VERIFIED-DETAIL-URL",
+      "headers": [
+        "Parcel",
+        "Year",
+        "Balance"
+      ],
+      "columns": {
+        "parcel": "Parcel",
+        "year": "Year",
+        "balance": "Balance"
+      },
+      "required_year": 2026
+    },
+    {
+      "id": "tax_6",
+      "county": "Stewart",
+      "configured": true,
+      "baseline": "0.00",
+      "complete_history_verified": true,
+      "parcel": "TEST-6",
+      "url": "https://tennesseetrustee.org/REPLACE-WITH-VERIFIED-DETAIL-URL",
+      "headers": [
+        "Parcel",
+        "Year",
+        "Balance"
+      ],
+      "columns": {
+        "parcel": "Parcel",
+        "year": "Year",
+        "balance": "Balance"
+      },
+      "required_year": 2026
+    }
+  ],
+  "fixture_only": true
+}
